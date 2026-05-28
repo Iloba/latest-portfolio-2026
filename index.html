@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary SEO Meta Tags -->
-  <title>Timothy Iloba — Fullstack Software Developer</title>
-  <meta name="title" content="Timothy Iloba — Fullstack Software Developer">
-  <meta name="description" content="I build websites & digital solutions blazingly fast. Specializing in clean user interfaces, scalable backend systems, and smooth digital experiences that work smoothly across all devices.">
-  <meta name="keywords" content="Timothy Iloba, Timothy Iloba Developer, Fullstack Developer, Abuja Developer, Nigeria Software Engineer, Web Developer Nigeria, WordPress Security, E-commerce Developer, Scalable Systems">
+  <title>Timothy Iloba — Website Developer in Nigeria</title>
+  <meta name="title" content="Timothy Iloba — Website Developer in Nigeria">
+  <meta name="description" content="Timothy Iloba is a top website developer in Nigeria building high-performance websites, customized WordPress portals, and reactive web applications blazingly fast.">
+  <meta name="keywords" content="Timothy Iloba, Timothy Iloba website developer in nigeria, website developer in nigeria, best website developer in nigeria, Abuja developer, Nigeria software engineer, web developer Nigeria, WordPress developer Nigeria, React software engineer Nigeria">
   <meta name="author" content="Timothy Iloba">
   <meta name="robots" content="index, follow">
 
@@ -18,15 +18,15 @@
   <!-- Open Graph / Facebook / LinkedIn Sharing Cards -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://timothyiloba.com/">
-  <meta property="og:title" content="Timothy Iloba — Fullstack Software Developer">
-  <meta property="og:description" content="I build websites & digital solutions blazingly fast. Specializing in clean user interfaces, scalable backend systems, and smooth digital experiences.">
+  <meta property="og:title" content="Timothy Iloba — Website Developer in Nigeria">
+  <meta property="og:description" content="Timothy Iloba is a top website developer in Nigeria building high-performance websites, custom WordPress, and reactive SaaS applications.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&h=630&q=80">
 
   <!-- Twitter / X Sharing Cards -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://timothyiloba.com/">
-  <meta property="twitter:title" content="Timothy Iloba — Fullstack Software Developer">
-  <meta property="twitter:description" content="I build websites & digital solutions blazingly fast. Specializing in clean user interfaces, scalable backend systems, and smooth digital experiences.">
+  <meta property="twitter:title" content="Timothy Iloba — Website Developer in Nigeria">
+  <meta property="twitter:description" content="Timothy Iloba is a top website developer in Nigeria building high-performance websites, custom WordPress, and reactive SaaS applications.">
   <meta property="twitter:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&h=630&q=80">
 
   <!-- Favicons / UI Icons -->
@@ -41,8 +41,8 @@
       "name": "Timothy Iloba",
       "url": "https://timothyiloba.com/",
       "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-      "jobTitle": "Fullstack Software Developer",
-      "description": "I build websites & digital solutions blazingly fast. Specializing in clean user interfaces, scalable backend systems, and smooth user experiences.",
+      "jobTitle": "Website Developer in Nigeria",
+      "description": "Timothy Iloba is a top website developer in Nigeria building high-performance websites, custom WordPress platforms, and reactive SaaS applications.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Abuja",
@@ -150,6 +150,15 @@
     }
 
 
+    /* Hide scrollbars but keep functionality */
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-none {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
     /* Reveal animations */
     .reveal-element {
       opacity: 0;
@@ -254,6 +263,9 @@
 </head>
 <body class="bg-white text-slate-800 font-sans selection:bg-brand-100 selection:text-brand-900 antialiased overflow-x-hidden bg-grain bg-grid-lines">
 
+  <!-- SCROLL PROGRESS INDICATOR BAR -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-brand-500 via-indigo-500 to-violet-500 w-0 z-[100] transition-all duration-75 shadow-[0_0_8px_rgba(124,58,237,0.5)]"></div>
+
   <!-- GLOW ACCENTS (SaaS Aesthetic Blur Effects) -->
   <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-brand-200/20 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
   <div class="absolute top-[1200px] right-1/4 w-[600px] h-[600px] bg-indigo-100/30 rounded-full blur-[150px] pointer-events-none -z-10"></div>
@@ -341,18 +353,6 @@
       </nav>
 
       <div class="pt-4 border-t border-slate-100/80 flex flex-col space-y-6">
-        <!-- Availability Card -->
-        <a href="#contact" class="mobile-nav-link flex items-center justify-between p-4 rounded-2xl bg-slate-50/50 border border-slate-100">
-          <div>
-            <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Status</p>
-            <p class="text-sm font-bold text-slate-800 mt-0.5">Ready to Build</p>
-          </div>
-          <div class="flex items-center space-x-2 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-100">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span class="text-[9px] font-bold text-emerald-700 uppercase tracking-wider">Available</span>
-          </div>
-        </a>
-
         <!-- Social Directories -->
         <div class="flex items-center justify-center space-x-3.5">
           <a href="https://www.linkedin.com/in/timothy-iloba/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-slate-200/60 hover:border-brand-500 hover:text-brand-600 flex items-center justify-center text-slate-400 hover:bg-slate-50 transition-all" aria-label="LinkedIn Profile">
@@ -391,7 +391,7 @@
         <!-- Hero Text -->
         <div class="lg:col-span-7 flex flex-col justify-center space-y-8">
           <!-- Availability Pill -->
-          <div class="inline-flex items-center space-x-2 bg-brand-50 border border-brand-100 px-3.5 py-1.5 rounded-full w-fit animate-hero-fade delay-75">
+          <div class="hidden md:inline-flex items-center space-x-2 bg-brand-50 border border-brand-100 px-3.5 py-1.5 rounded-full w-fit animate-hero-fade delay-75">
             <span class="flex h-2 w-2 relative">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-600"></span>
@@ -455,7 +455,7 @@
               
               <!-- Professional Portrait Placeholder -->
               <img src="images/me.webp" 
-                   alt="Timothy Iloba Portrait Placeholder" 
+                   alt="Timothy Iloba - Professional Website Developer in Nigeria | Premium Fullstack Engineer & Designer" 
                    class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-[1.03] relative z-0">
               
               <!-- Ambient light linear overlay -->
@@ -526,10 +526,6 @@
             <p class="text-slate-600 leading-relaxed text-base">
               Over time, I have worked on a range of projects, from small business websites to more complex web applications. I am committed to simplicity, performance, and building solutions that are not only easy to use but also designed to scale effectively as they grow.
             </p>
-
-            <blockquote class="border-l-2 border-brand-500 pl-4 py-1.5 italic text-slate-500 font-medium">
-              "Simple architectures are elegant, stable, and deeply satisfying to build upon."
-            </blockquote>
           </div>
 
           <!-- Stats Grid cards (Highly Dynamic Staggered Entrance Reveal) -->
@@ -668,7 +664,7 @@
                 <span class="text-xs text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-mono">Pro</span>
               </li>
               <li class="flex items-center justify-between text-sm text-slate-600 font-medium">
-                <span>Supabase / Firebase</span>
+                <span>PHP / Laravel</span>
                 <span class="text-xs text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-mono">Pro</span>
               </li>
               <li class="flex items-center justify-between text-sm text-slate-600 font-medium">
@@ -702,7 +698,7 @@
                 <span class="text-xs text-pink-600 bg-pink-50 px-2 py-0.5 rounded font-mono">Expert</span>
               </li>
               <li class="flex items-center justify-between text-sm text-slate-600 font-medium">
-                <span>Vite & Docker</span>
+                <span>WordPress / Wix</span>
                 <span class="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded font-mono">Pro</span>
               </li>
             </ul>
@@ -758,60 +754,208 @@
           
           <!-- Interactive Project Tabs -->
           <div class="flex items-center gap-1.5 mt-6 lg:mt-0 p-1.5 bg-slate-100/70 border border-slate-200/50 rounded-xl w-fit">
-            <button onclick="filterProjects('web-app', this)" class="project-tab active px-4 py-2 rounded-lg text-xs font-semibold transition-all duration-200 bg-white text-slate-800 shadow-sm border border-slate-200/20">
-              Web Applications
-            </button>
-            <button onclick="filterProjects('wordpress', this)" class="project-tab px-4 py-2 rounded-lg text-xs font-semibold transition-all duration-200 text-slate-500 hover:text-slate-800 hover:bg-white/40">
+            <button onclick="filterProjects('wordpress', this)" class="project-tab active px-4 py-2 rounded-lg text-xs font-semibold transition-all duration-200 bg-white text-slate-800 shadow-sm border border-slate-200/20">
               Website Designs (WordPress)
+            </button>
+            <button onclick="filterProjects('web-app', this)" class="project-tab px-4 py-2 rounded-lg text-xs font-semibold transition-all duration-200 text-slate-500 hover:text-slate-800 hover:bg-white/40">
+              Web Applications
             </button>
           </div>
         </div>
 
-        <!-- Grid Container -->
-        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-element" style="transition-delay: 150ms">
+        <!-- Slider Container Wrapper -->
+        <div class="relative group/slider">
           
-          <!-- ==================== WEB APPLICATIONS ==================== -->
+          <!-- Navigation Arrows -->
+          <button onclick="slideProjects('left')" class="absolute left-[-24px] top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-lg flex items-center justify-center text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-200 opacity-0 group-hover/slider:opacity-100 focus:opacity-100 disabled:opacity-30 disabled:pointer-events-none md:flex hidden" id="prev-project-btn" aria-label="Previous Projects">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+            </svg>
+          </button>
+          
+          <button onclick="slideProjects('right')" class="absolute right-[-24px] top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-lg flex items-center justify-center text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-200 opacity-0 group-hover/slider:opacity-100 focus:opacity-100 disabled:opacity-30 disabled:pointer-events-none md:flex hidden" id="next-project-btn" aria-label="Next Projects">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+            </svg>
+          </button>
+           <!-- Slider Viewport Track -->
+          <div id="projects-grid" class="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-6 scrollbar-none">
+          
+          <!-- ==================== WORDPRESS WEBSITE DESIGNS ==================== -->
 
-          <!-- Project Card 1: Nova Analytics -->
-          <div class="project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between" data-category="web-app">
-            <!-- SVG Illustration Thumbnail -->
-            <div class="aspect-[16/10] bg-slate-950 flex items-center justify-center p-8 relative overflow-hidden">
-              <div class="absolute inset-0 bg-[radial-gradient(#1e1b4b_1px,transparent_1px)] bg-[size:16px_16px] opacity-25"></div>
-              <div class="w-full max-w-[220px] bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-2xl relative transform group-hover:scale-[1.03] transition-transform duration-300">
-                <div class="border-b border-slate-800 px-3 py-2 flex items-center justify-between">
-                  <span class="text-[8px] font-mono text-slate-500">nova-platform-analytics</span>
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 block"></span>
-                </div>
-                <div class="p-3 space-y-2">
-                  <div class="flex items-center justify-between text-[9px]">
-                    <span class="text-slate-400 font-semibold">User Conversion</span>
-                    <span class="text-brand-400 font-mono font-bold">+12.4%</span>
-                  </div>
-                  <!-- Simulated Bar Graph -->
-                  <div class="flex items-end justify-between h-10 pt-1">
-                    <span class="w-2.5 bg-slate-800 rounded-t-sm h-4"></span>
-                    <span class="w-2.5 bg-slate-800 rounded-t-sm h-8"></span>
-                    <span class="w-2.5 bg-brand-500 rounded-t-sm h-6 group-hover:h-7 transition-all"></span>
-                    <span class="w-2.5 bg-indigo-500 rounded-t-sm h-9"></span>
-                    <span class="w-2.5 bg-violet-400 rounded-t-sm h-10 group-hover:h-8 transition-all"></span>
-                  </div>
-                </div>
-              </div>
+          <!-- Project Card 1: Intercarlin -->
+          <div class="project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between reveal-element w-full shrink-0 snap-start md:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)]" style="transition-delay: 50ms" data-category="wordpress">
+            <!-- Project Image Thumbnail -->
+            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+              <img src="images/ia.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80';" alt="Intercarlin construction company website designed by Timothy Iloba, leading website developer in Nigeria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none"></div>
             </div>
             <!-- Card Copy -->
-            <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
-              <div class="space-y-3">
-                <div class="flex flex-wrap gap-1.5">
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Title directly under the image -->
+                <h3 class="font-display text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Intercarlin</h3>
+                
+                <!-- Category Tags below the title -->
+                <div class="flex flex-wrap gap-1.5 mt-2.5">
+                  <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">WordPress</span>
+                  <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Elementor</span>
+                </div>
+                
+                <!-- Description below the tags -->
+                <p class="text-slate-600 text-xs leading-relaxed mt-3.5">
+                  Modern construction website featuring service pages, project showcases, and clean responsive layouts, optimized for performance and user engagement.
+                </p>
+              </div>
+              <!-- CTA Links -->
+              <div class="flex items-center space-x-4 pt-4 mt-6 border-t border-slate-50">
+                <a href="https://intercarlin.com" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
+                  Live Preview
+                  <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2: Carlin Concept -->
+          <div class="project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between reveal-element w-full shrink-0 snap-start md:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)]" style="transition-delay: 150ms" data-category="wordpress">
+            <!-- Project Image Thumbnail -->
+            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+              <img src="images/ca.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80';" alt="Carlin Concept creative studio portfolio website built by Timothy Iloba, top website developer in Nigeria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+            <!-- Card Copy -->
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Title directly under the image -->
+                <h3 class="font-display text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Carlin Concept</h3>
+                
+                <!-- Category Tags below the title -->
+                <div class="flex flex-wrap gap-1.5 mt-2.5">
+                  <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">WordPress</span>
+                  <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Elementor</span>
+                </div>
+                
+                <!-- Description below the tags -->
+                <p class="text-slate-600 text-xs leading-relaxed mt-3.5">
+                  Sleek creative studio platform showcasing dynamic pattern designs, grid-based showcases, and responsive project layouts.
+                </p>
+              </div>
+              <!-- CTA Links -->
+              <div class="flex items-center space-x-4 pt-4 mt-6 border-t border-slate-50">
+                <a href="https://carlinconcept.com" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
+                  Live Preview
+                  <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3: P&A Football Academy -->
+          <div class="project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between reveal-element w-full shrink-0 snap-start md:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)]" style="transition-delay: 250ms" data-category="wordpress">
+            <!-- Project Image Thumbnail -->
+            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+              <img src="images/pa.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80';" alt="P&A Football Academy sports agency website engineered by Timothy Iloba, expert website developer in Nigeria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+            <!-- Card Copy -->
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Title directly under the image -->
+                <h3 class="font-display text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">P&A Football Academy</h3>
+                
+                <!-- Category Tags below the title -->
+                <div class="flex flex-wrap gap-1.5 mt-2.5">
+                  <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">WordPress</span>
+                  <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Elementor</span>
+                </div>
+                
+                <!-- Description below the tags -->
+                <p class="text-slate-600 text-xs leading-relaxed mt-3.5">
+                  Modern football academy website featuring training programs, player showcases, and clean layouts optimized for core web vitals.
+                </p>
+              </div>
+              <!-- CTA Links -->
+              <div class="flex items-center space-x-4 pt-4 mt-6 border-t border-slate-50">
+                <a href="https://pandafootballacademy.com" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
+                  Live Preview
+                  <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4: Juli's Way -->
+          <div class="project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between reveal-element w-full shrink-0 snap-start md:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)]" style="transition-delay: 350ms" data-category="wordpress">
+            <!-- Project Image Thumbnail -->
+            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+              <img src="images/ja.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80';" alt="Juli's Way fashion e-commerce storefront designed by Timothy Iloba, professional website developer in Nigeria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+            <!-- Card Copy -->
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Title directly under the image -->
+                <h3 class="font-display text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Juli's Way</h3>
+                
+                <!-- Category Tags below the title -->
+                <div class="flex flex-wrap gap-1.5 mt-2.5">
+                  <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">WordPress</span>
+                  <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Elementor</span>
+                </div>
+                
+                <!-- Description below the tags -->
+                <p class="text-slate-600 text-xs leading-relaxed mt-3.5">
+                  Modern e-commerce fashion boutique platform featuring styled product grids, cart operations, and responsive checkout flows.
+                </p>
+              </div>
+              <!-- CTA Links -->
+              <div class="flex items-center space-x-4 pt-4 mt-6 border-t border-slate-50">
+                <a href="https://julisway.com" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
+                  Live Preview
+                  <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ==================== WEB APPLICATIONS ==================== -->
+
+          <!-- Project Card 5: Nova Analytics Platform -->
+          <div class="hidden project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between reveal-element opacity-0 scale-95 w-full shrink-0 snap-start md:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)]" style="transition-delay: 50ms" data-category="web-app">
+            <!-- Project Image Thumbnail -->
+            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+              <img src="images/nova.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80';" alt="Nova Analytics platform real-time dashboard engineered by Timothy Iloba, expert website developer in Nigeria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+            <!-- Card Copy -->
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Title directly under the image -->
+                <h3 class="font-display text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Nova Analytics Platform</h3>
+                
+                <!-- Category Tags below the title -->
+                <div class="flex flex-wrap gap-1.5 mt-2.5">
                   <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Next.js</span>
                   <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">PostgreSQL</span>
                 </div>
-                <h3 class="font-display text-lg font-bold text-slate-900">Nova Analytics Platform</h3>
-                <p class="text-slate-600 text-xs leading-relaxed">
+                
+                <!-- Description below the tags -->
+                <p class="text-slate-600 text-xs leading-relaxed mt-3.5">
                   Real-time telemetry dashboard featuring optimized WebSocket connections, customizable tables, and responsive reports.
                 </p>
               </div>
               <!-- CTA Links -->
-              <div class="flex items-center space-x-4 pt-3 border-t border-slate-50">
+              <div class="flex items-center space-x-4 pt-4 mt-6 border-t border-slate-50">
                 <a href="#contact" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
                   Live Preview
                   <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -822,38 +966,32 @@
             </div>
           </div>
 
-          <!-- Project Card 2: Aura Writer -->
-          <div class="project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between" data-category="web-app">
-            <!-- SVG Illustration Thumbnail -->
-            <div class="aspect-[16/10] bg-slate-50 flex items-center justify-center p-8 relative overflow-hidden">
-              <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] bg-[size:16px_16px] opacity-60"></div>
-              <div class="w-full max-w-[220px] bg-white border border-slate-200/80 rounded-xl overflow-hidden shadow-2xl relative transform group-hover:scale-[1.03] transition-transform duration-300">
-                <div class="border-b border-slate-100 px-3 py-2 flex items-center justify-between">
-                  <span class="text-[8px] font-mono text-slate-400">aura-doc.md</span>
-                  <span class="text-[8px] font-semibold text-brand-600 bg-brand-50 px-1.5 py-0.5 rounded">Autosaved</span>
-                </div>
-                <div class="p-3 space-y-1.5">
-                  <div class="w-1/3 h-2 bg-slate-900 rounded-full"></div>
-                  <div class="w-full h-1 bg-slate-200 rounded-full"></div>
-                  <div class="w-5/6 h-1 bg-slate-200 rounded-full"></div>
-                  <div class="w-2/3 h-1 bg-slate-200 rounded-full"></div>
-                </div>
-              </div>
+          <!-- Project Card 6: Aura Writing Workspace -->
+          <div class="hidden project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between reveal-element opacity-0 scale-95 w-full shrink-0 snap-start md:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)]" style="transition-delay: 150ms" data-category="web-app">
+            <!-- Project Image Thumbnail -->
+            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+              <img src="images/aura.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80';" alt="Aura Writing Workspace rich text workspace web application built by Timothy Iloba, freelance website developer in Nigeria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none"></div>
             </div>
             <!-- Card Copy -->
-            <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
-              <div class="space-y-3">
-                <div class="flex flex-wrap gap-1.5">
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Title directly under the image -->
+                <h3 class="font-display text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Aura Writing Workspace</h3>
+                
+                <!-- Category Tags below the title -->
+                <div class="flex flex-wrap gap-1.5 mt-2.5">
                   <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">React</span>
                   <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Supabase</span>
                 </div>
-                <h3 class="font-display text-lg font-bold text-slate-900">Aura Writing Workspace</h3>
-                <p class="text-slate-600 text-xs leading-relaxed">
+                
+                <!-- Description below the tags -->
+                <p class="text-slate-600 text-xs leading-relaxed mt-3.5">
                   Sleek markdown editor featuring localized drafts histories, visual utilities, and dual-pane reactive previewing.
                 </p>
               </div>
               <!-- CTA Links -->
-              <div class="flex items-center space-x-4 pt-3 border-t border-slate-50">
+              <div class="flex items-center space-x-4 pt-4 mt-6 border-t border-slate-50">
                 <a href="#contact" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
                   Live Preview
                   <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -864,42 +1002,32 @@
             </div>
           </div>
 
-          <!-- Project Card 3: Vortex Commerce -->
-          <div class="project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between" data-category="web-app">
-            <!-- SVG Illustration Thumbnail -->
-            <div class="aspect-[16/10] bg-slate-900 flex items-center justify-center p-8 relative overflow-hidden">
-              <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] bg-[size:16px_16px] opacity-60"></div>
-              <div class="w-full max-w-[220px] bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-2xl relative transform group-hover:scale-[1.03] transition-transform duration-300">
-                <div class="border-b border-slate-800 px-3 py-2 flex items-center justify-between">
-                  <span class="text-[8px] font-mono text-slate-500">vortex-storefront</span>
-                  <span class="text-[8px] font-bold text-emerald-400">$0.00</span>
-                </div>
-                <div class="p-3 grid grid-cols-2 gap-2">
-                  <div class="border border-slate-800 bg-slate-900/50 rounded-lg p-2 space-y-1.5">
-                    <div class="w-2/3 h-1 bg-slate-700 rounded-full"></div>
-                    <div class="w-1/2 h-1 bg-slate-800 rounded-full"></div>
-                  </div>
-                  <div class="border border-slate-800 bg-slate-900/50 rounded-lg p-2 space-y-1.5">
-                    <div class="w-3/4 h-1 bg-slate-700 rounded-full"></div>
-                    <div class="w-2/5 h-1 bg-slate-800 rounded-full"></div>
-                  </div>
-                </div>
-              </div>
+          <!-- Project Card 7: Vortex Storefront -->
+          <div class="hidden project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between reveal-element opacity-0 scale-95 w-full shrink-0 snap-start md:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)]" style="transition-delay: 250ms" data-category="web-app">
+            <!-- Project Image Thumbnail -->
+            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+              <img src="images/vortex.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80';" alt="Vortex headless e-commerce storefront developed by Timothy Iloba, website developer in Nigeria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none"></div>
             </div>
             <!-- Card Copy -->
-            <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
-              <div class="space-y-3">
-                <div class="flex flex-wrap gap-1.5">
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Title directly under the image -->
+                <h3 class="font-display text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Vortex Storefront</h3>
+                
+                <!-- Category Tags below the title -->
+                <div class="flex flex-wrap gap-1.5 mt-2.5">
                   <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Next.js</span>
                   <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Stripe</span>
                 </div>
-                <h3 class="font-display text-lg font-bold text-slate-900">Vortex Storefront</h3>
-                <p class="text-slate-600 text-xs leading-relaxed">
+                
+                <!-- Description below the tags -->
+                <p class="text-slate-600 text-xs leading-relaxed mt-3.5">
                   Headless storefront integrated with Stripe API and GraphQL engine, highly optimized for speed and core web vitals.
                 </p>
               </div>
               <!-- CTA Links -->
-              <div class="flex items-center space-x-4 pt-3 border-t border-slate-50">
+              <div class="flex items-center space-x-4 pt-4 mt-6 border-t border-slate-50">
                 <a href="#contact" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
                   Live Preview
                   <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -910,41 +1038,32 @@
             </div>
           </div>
 
-
-          <!-- ==================== WORDPRESS WEBSITE DESIGNS ==================== -->
-
-          <!-- Project Card 4: Apex Architect Agency (WordPress) -->
-          <div class="hidden project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between opacity-0 scale-95" data-category="wordpress">
-            <!-- SVG Illustration Thumbnail -->
-            <div class="aspect-[16/10] bg-slate-900 flex items-center justify-center p-8 relative overflow-hidden">
-              <!-- Technical Blueprint Grid -->
-              <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:20px_20px] opacity-40"></div>
-              
-              <!-- Geometric Minimal House Layout Mock -->
-              <div class="w-full max-w-[220px] border border-white/20 p-4 rounded-lg bg-slate-950/80 shadow-2xl relative transform group-hover:scale-[1.03] transition-transform duration-300 text-slate-400">
-                <div class="flex items-center space-x-2 border-b border-white/10 pb-2 mb-2 text-[8px] font-mono">
-                  <span class="w-2 h-2 rounded bg-indigo-500 inline-block"></span>
-                  <span>apex-architects.dwg</span>
-                </div>
-                <div class="h-10 border border-dashed border-white/20 flex items-center justify-center text-[9px] uppercase tracking-widest font-display font-medium text-white/40">
-                  Elevation Grid
-                </div>
-              </div>
+          <!-- Project Card 8: Zenith Collaboration Engine -->
+          <div class="hidden project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between reveal-element opacity-0 scale-95 w-full shrink-0 snap-start md:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)]" style="transition-delay: 350ms" data-category="web-app">
+            <!-- Project Image Thumbnail -->
+            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+              <img src="images/zenith.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80';" alt="Zenith SaaS team collaboration engine engineered by Timothy Iloba, professional website developer in Nigeria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none"></div>
             </div>
             <!-- Card Copy -->
-            <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
-              <div class="space-y-3">
-                <div class="flex flex-wrap gap-1.5">
-                  <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">WordPress</span>
-                  <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">ACF Pro</span>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Title directly under the image -->
+                <h3 class="font-display text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Zenith Collaboration Engine</h3>
+                
+                <!-- Category Tags below the title -->
+                <div class="flex flex-wrap gap-1.5 mt-2.5">
+                  <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Next.js</span>
+                  <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Supabase</span>
                 </div>
-                <h3 class="font-display text-lg font-bold text-slate-900">Apex Luxury Architects</h3>
-                <p class="text-slate-600 text-xs leading-relaxed">
-                  Highly custom Gutenberg portfolio showcasing ultra-luxury architectural specs with detailed image layouts, filtering tags, and fast loading.
+                
+                <!-- Description below the tags -->
+                <p class="text-slate-600 text-xs leading-relaxed mt-3.5">
+                  Real-time drag-and-drop SaaS board featuring collaborative Kanban spaces, database sync pools, and instant activity indicators.
                 </p>
               </div>
               <!-- CTA Links -->
-              <div class="flex items-center space-x-4 pt-3 border-t border-slate-50">
+              <div class="flex items-center space-x-4 pt-4 mt-6 border-t border-slate-50">
                 <a href="#contact" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
                   Live Preview
                   <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -955,94 +1074,11 @@
             </div>
           </div>
 
-          <!-- Project Card 5: Pulse Wellness (WordPress) -->
-          <div class="hidden project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between opacity-0 scale-95" data-category="wordpress">
-            <!-- SVG Illustration Thumbnail -->
-            <div class="aspect-[16/10] bg-slate-50 flex items-center justify-center p-8 relative overflow-hidden">
-              <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] bg-[size:16px_16px] opacity-60"></div>
-              
-              <!-- Abstract Mock Wellness Stats Grid -->
-              <div class="w-full max-w-[220px] bg-white border border-slate-200/80 rounded-xl overflow-hidden shadow-2xl p-4 relative transform group-hover:scale-[1.03] transition-transform duration-300">
-                <div class="flex items-center justify-between border-b border-slate-100 pb-2 mb-3">
-                  <span class="text-[8px] font-bold text-slate-800 font-display">Daily Active Pulse</span>
-                  <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
-                </div>
-                <!-- Mini Stats Rows -->
-                <div class="space-y-1.5">
-                  <div class="h-2 bg-slate-100 rounded-full w-full"></div>
-                  <div class="h-2 bg-slate-100 rounded-full w-5/6"></div>
-                  <div class="h-2.5 bg-brand-50 rounded-full w-2/3"></div>
-                </div>
-              </div>
-            </div>
-            <!-- Card Copy -->
-            <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
-              <div class="space-y-3">
-                <div class="flex flex-wrap gap-1.5">
-                  <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">WordPress</span>
-                  <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">Block Themes</span>
-                </div>
-                <h3 class="font-display text-lg font-bold text-slate-900">Pulse Fitness Hub</h3>
-                <p class="text-slate-600 text-xs leading-relaxed">
-                  Fast Gutenberg platform for fitness brands featuring structured pattern designs, dynamic grids, and decoupled REST API integrations.
-                </p>
-              </div>
-              <!-- CTA Links -->
-              <div class="flex items-center space-x-4 pt-3 border-t border-slate-50">
-                <a href="#contact" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
-                  Live Preview
-                  <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Card 6: Vesper Magazine (WordPress) -->
-          <div class="hidden project-card group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:border-brand-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-100/50 transition-all duration-300 flex flex-col justify-between opacity-0 scale-95" data-category="wordpress">
-            <!-- SVG Illustration Thumbnail -->
-            <div class="aspect-[16/10] bg-slate-950 flex items-center justify-center p-8 relative overflow-hidden">
-              <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] bg-[size:16px_16px] opacity-60"></div>
-              
-              <!-- Abstract Mock Magazine Grid -->
-              <div class="w-full max-w-[220px] bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-2xl relative transform group-hover:scale-[1.03] transition-transform duration-300">
-                <div class="border-b border-slate-800 px-3 py-2 flex items-center justify-between text-[7px] font-mono text-slate-500">
-                  <span>vesper-issue-32.pdf</span>
-                  <span>05.2026</span>
-                </div>
-                <div class="p-3.5 space-y-2">
-                  <div class="font-display font-bold text-white text-[12px] leading-tight">VESPER.</div>
-                  <div class="w-1/2 h-1 bg-brand-400 rounded-full"></div>
-                  <div class="w-full h-1 bg-slate-800 rounded-full"></div>
-                  <div class="w-3/4 h-1 bg-slate-800 rounded-full"></div>
-                </div>
-              </div>
-            </div>
-            <!-- Card Copy -->
-            <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
-              <div class="space-y-3">
-                <div class="flex flex-wrap gap-1.5">
-                  <span class="text-[9px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full uppercase tracking-wider">WordPress</span>
-                  <span class="text-[9px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full uppercase tracking-wider">FSE Themes</span>
-                </div>
-                <h3 class="font-display text-lg font-bold text-slate-900">Vesper Digital Publication</h3>
-                <p class="text-slate-600 text-xs leading-relaxed">
-                  Clean editorial magazine built using Full Site Editing (FSE) block themes, refined typography scaling, and advanced SEO caching configurations.
-                </p>
-              </div>
-              <!-- CTA Links -->
-              <div class="flex items-center space-x-4 pt-3 border-t border-slate-50">
-                <a href="#contact" class="inline-flex items-center text-xs font-semibold text-slate-900 hover:text-brand-600 transition-colors">
-                  Live Preview
-                  <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
+          </div>    </div>
+          
+          <!-- Slider Navigation Dots -->
+          <div class="flex items-center justify-center space-x-2.5 mt-4" id="project-dots-container"></div>
+          
         </div>
 
       </div>
@@ -1078,7 +1114,7 @@
                 <!-- Premium Professional Thumbnail -->
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
                      class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover/video:grayscale-0 transition-all duration-700 z-0" 
-                     alt="Juli Edwards Video Testimonial">
+                     alt="Juli Edwards sharing a video testimonial for Timothy Iloba, creative website developer in Nigeria">
 
                 <!-- Premium Blur Pulse Play Button -->
                 <div class="relative z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white shadow-lg transition-all duration-300 group-hover/video:bg-white group-hover/video:text-zinc-950 group-hover/video:scale-110">
@@ -1126,7 +1162,7 @@
                 <!-- Premium Professional Thumbnail -->
                 <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" 
                      class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover/video:grayscale-0 transition-all duration-700 z-0" 
-                     alt="Henitter Gant Video Testimonial">
+                     alt="Henitter Gant presenting a video review praising Timothy Iloba, leading website developer in Nigeria">
 
                 <!-- Premium Blur Pulse Play Button -->
                 <div class="relative z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white shadow-lg transition-all duration-300 group-hover/video:bg-white group-hover/video:text-zinc-950 group-hover/video:scale-110">
@@ -1174,7 +1210,7 @@
                 <!-- Premium Professional Thumbnail -->
                 <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80" 
                      class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover/video:grayscale-0 transition-all duration-700 z-0" 
-                     alt="Patrick Adeolu Video Testimonial">
+                     alt="Patrick Adeolu video recommendation detailing the premium services of Timothy Iloba, website developer in Nigeria">
 
                 <!-- Premium Blur Pulse Play Button -->
                 <div class="relative z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white shadow-lg transition-all duration-300 group-hover/video:bg-white group-hover/video:text-zinc-950 group-hover/video:scale-110">
@@ -1404,7 +1440,23 @@
       }
     }
 
-    window.addEventListener('scroll', updateNavbarAppearance);
+    function updateScrollProgress() {
+      const progressBar = document.getElementById('scroll-progress');
+      if (progressBar) {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        progressBar.style.width = scrolled + '%';
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      updateNavbarAppearance();
+      updateScrollProgress();
+    });
+
+    window.addEventListener('resize', updateScrollProgress);
+    document.addEventListener('DOMContentLoaded', updateScrollProgress);
 
     // Mobile Hamburger Navigation Drawer Toggle
     const menuBtn = document.getElementById('menu-btn');
@@ -1515,6 +1567,12 @@
         tabBtn.className = "project-tab active px-4 py-2 rounded-lg text-xs font-semibold transition-all duration-200 bg-white text-slate-800 shadow-sm border border-slate-200/20";
       }
 
+      // Reset scroll state of projects grid
+      const grid = document.getElementById('projects-grid');
+      if (grid) {
+        grid.scrollLeft = 0;
+      }
+
       // Show/Hide Project Cards
       projectCards.forEach(card => {
         card.style.opacity = '0';
@@ -1532,6 +1590,99 @@
           }
         }, 200);
       });
+
+      // Update slider pagination and controls after state transition completes
+      setTimeout(updateProjectSliderControls, 300);
+    }
+
+    // Projects Horizontal Slider Controller
+    function updateProjectSliderControls() {
+      const grid = document.getElementById('projects-grid');
+      const prevBtn = document.getElementById('prev-project-btn');
+      const nextBtn = document.getElementById('next-project-btn');
+      if (!grid) return;
+
+      const visibleCards = Array.from(grid.querySelectorAll('.project-card:not(.hidden)'));
+      const cardCount = visibleCards.length;
+      if (cardCount === 0) return;
+
+      const scrollLeft = grid.scrollLeft;
+      const scrollWidth = grid.scrollWidth;
+      const clientWidth = grid.clientWidth;
+
+      // Enable/disable arrows
+      if (prevBtn) prevBtn.disabled = scrollLeft <= 10;
+      if (nextBtn) nextBtn.disabled = (scrollLeft + clientWidth) >= (scrollWidth - 10);
+
+      // Render pagination dots
+      const dotsContainer = document.getElementById('project-dots-container');
+      if (dotsContainer) {
+        let dotsCount = 1;
+        const cardWidth = visibleCards[0].offsetWidth + 32; // card width + gap (32px / 2rem)
+        
+        const visibleCount = Math.round(clientWidth / (visibleCards[0].offsetWidth || 1));
+        if (visibleCount >= cardCount) {
+          dotsCount = 0; // No sliding needed
+        } else {
+          dotsCount = cardCount - visibleCount + 1;
+        }
+
+        const currentDots = dotsContainer.querySelectorAll('.project-dot');
+        if (currentDots.length !== dotsCount) {
+          dotsContainer.innerHTML = '';
+          for (let i = 0; i < dotsCount; i++) {
+            const dot = document.createElement('button');
+            dot.className = `project-dot w-2 h-2 rounded-full transition-all duration-300 bg-slate-200 hover:bg-slate-400`;
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            dot.addEventListener('click', () => {
+              grid.scrollTo({
+                left: i * cardWidth,
+                behavior: 'smooth'
+              });
+            });
+            dotsContainer.appendChild(dot);
+          }
+        }
+
+        const dots = dotsContainer.querySelectorAll('.project-dot');
+        if (dots.length > 0) {
+          const activeIndex = Math.min(
+            Math.round(scrollLeft / cardWidth),
+            dots.length - 1
+          );
+          dots.forEach((dot, idx) => {
+            if (idx === activeIndex) {
+              dot.classList.add('bg-brand-600', 'w-5');
+              dot.classList.remove('bg-slate-200', 'w-2');
+            } else {
+              dot.classList.remove('bg-brand-600', 'w-5');
+              dot.classList.add('bg-slate-200', 'w-2');
+            }
+          });
+        }
+      }
+    }
+
+    function slideProjects(direction) {
+      const grid = document.getElementById('projects-grid');
+      if (!grid) return;
+      const visibleCards = grid.querySelectorAll('.project-card:not(.hidden)');
+      if (visibleCards.length === 0) return;
+      
+      const cardWidth = visibleCards[0].offsetWidth + 32; // Card width + gap
+      const currentScroll = grid.scrollLeft;
+      
+      if (direction === 'left') {
+        grid.scrollTo({
+          left: Math.max(0, currentScroll - cardWidth),
+          behavior: 'smooth'
+        });
+      } else {
+        grid.scrollTo({
+          left: Math.min(grid.scrollWidth - grid.clientWidth, currentScroll + cardWidth),
+          behavior: 'smooth'
+        });
+      }
     }
 
     // Interactive Contact Form AJAX Submissions (FormSubmit Delivery)
@@ -1652,10 +1803,18 @@
       counters.forEach(counter => countObserver.observe(counter));
     }
     
-    // Initialize count-up on load
+    // Initialize count-up and projects slider on load
     document.addEventListener('DOMContentLoaded', () => {
       animateCountUp();
+      
+      const grid = document.getElementById('projects-grid');
+      if (grid) {
+        grid.addEventListener('scroll', updateProjectSliderControls);
+      }
+      setTimeout(updateProjectSliderControls, 500); // Initialize on load
     });
+
+    window.addEventListener('resize', updateProjectSliderControls);
   </script>
 </body>
 </html>
