@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Prevent directory listings
+Options -Indexes
+
+# If the request matches /smm exactly, rewrite to smm/index.html internally
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^smm$ smm/index.html [L]
+
+# If the request matches /resume exactly, rewrite to resume/index.html internally
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^resume$ resume/index.html [L]
