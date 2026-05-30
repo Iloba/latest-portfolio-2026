@@ -390,14 +390,6 @@
         
         <!-- Hero Text -->
         <div class="lg:col-span-7 flex flex-col justify-center space-y-8">
-          <!-- Availability Pill -->
-          <div class="hidden md:inline-flex items-center space-x-2 bg-brand-50 border border-brand-100 px-3.5 py-1.5 rounded-full w-fit animate-hero-fade delay-75">
-            <span class="flex h-2 w-2 relative">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-600"></span>
-            </span>
-            <span class="text-xs font-semibold tracking-wide text-brand-700 uppercase">Available for freelance & full-time roles</span>
-          </div>
 
           <!-- Main Typography Headline -->
           <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] animate-hero-fade delay-150">
@@ -470,31 +462,6 @@
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
               </div>
             </div>
-
-            <!-- Absolute decorative elements to retain high-end SaaS feel -->
-            <!-- Floating badge: Experience -->
-            <div class="absolute -top-5 -left-5 bg-white border border-slate-100 rounded-xl p-3 shadow-lg flex items-center space-x-2.5 animate-float-slow z-30">
-              <span class="w-7 h-7 rounded-lg bg-brand-50 flex items-center justify-center text-brand-600 font-bold text-xs">
-                ✦
-              </span>
-              <div>
-                <p class="text-[9px] font-semibold uppercase tracking-wider text-slate-400">Design & Code</p>
-                <p class="text-xs font-bold text-slate-800">Pixel Perfect</p>
-              </div>
-            </div>
-
-            <!-- Floating badge: System Status -->
-            <div class="absolute -bottom-5 -right-5 bg-white border border-slate-100 rounded-xl p-3 shadow-lg flex items-center space-x-2.5 animate-float-medium z-30">
-              <span class="w-7 h-7 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
-                <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                </svg>
-              </span>
-              <div>
-                <p class="text-[9px] font-semibold uppercase tracking-wider text-slate-400">Security</p>
-                <p class="text-xs font-bold text-slate-800">Verified Pro</p>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -525,12 +492,6 @@
 
             <p class="text-slate-600 leading-relaxed text-base">
               Over time, I have worked on a range of projects, from small business websites to more complex web applications. I am committed to simplicity, performance, and building solutions that are not only easy to use but also designed to scale effectively as they grow.
-              <a href="resume/index.html" class="inline-flex items-center text-brand-600 hover:text-brand-700 font-semibold hover:underline group mt-2">
-                Explore my full professional journey on my Interactive CV
-                <svg class="ml-1.5 w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                </svg>
-              </a>
             </p>
           </div>
 
@@ -1438,12 +1399,12 @@
     function updateNavbarAppearance() {
       const isMenuOpen = mobileMenu && !mobileMenu.classList.contains('hidden');
       if (window.scrollY > 40 || isMenuOpen) {
-        navbar.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'border-slate-100');
+        navbar.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-md', 'border-slate-100');
         navbar.classList.remove('border-transparent', 'bg-transparent');
         navbarContainer.classList.add('h-16');
         navbarContainer.classList.remove('h-20');
       } else {
-        navbar.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'border-slate-100');
+        navbar.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-md', 'border-slate-100');
         navbar.classList.add('border-transparent', 'bg-transparent');
         navbarContainer.classList.add('h-20');
         navbarContainer.classList.remove('h-16');

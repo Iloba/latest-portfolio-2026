@@ -149,6 +149,33 @@
     .animate-float-slow {
       animation: float 6s ease-in-out infinite;
     }
+
+    /* Mobile slide down and modern burger morph */
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-slide-down {
+      animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Modern Morphing Hamburger Icon */
+    #menu-btn.menu-open #menu-bar-top {
+      transform: translateY(6px) rotate(45deg);
+    }
+    #menu-btn.menu-open #menu-bar-middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    #menu-btn.menu-open #menu-bar-bottom {
+      transform: translateY(-6px) rotate(-45deg);
+    }
   </style>
 </head>
 <body class="bg-white font-sans text-slate-600 antialiased bg-grain bg-grid-lines relative min-h-screen">
@@ -186,27 +213,60 @@
           Let's Grow
         </a>
         
+        <!-- Mobile Hamburger Button Toggle -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="w-10 h-10 flex flex-col items-center justify-center rounded-xl border border-slate-100/80 bg-white/80 shadow-sm hover:bg-slate-50 transition-colors focus:outline-none z-50 relative transform active:scale-95" aria-label="Toggle Mobile Menu" aria-expanded="false">
+            <div class="w-5 h-3.5 flex flex-col justify-between relative transform transition-transform duration-300">
+              <span id="menu-bar-top" class="w-5 h-[2px] bg-slate-700 rounded-full transition-all duration-300 transform origin-center"></span>
+              <span id="menu-bar-middle" class="w-3.5 h-[2px] bg-slate-700 rounded-full transition-all duration-300 transform origin-center self-end"></span>
+              <span id="menu-bar-bottom" class="w-5 h-[2px] bg-slate-700 rounded-full transition-all duration-300 transform origin-center"></span>
+            </div>
+          </button>
+        </div>
 
       </div>
 
     </div>
   </header>
 
-  <!-- MOBILE SIDE DRAWER MENU -->
-  <div class="fixed inset-0 z-40 bg-white/95 backdrop-blur-xl flex flex-col justify-between p-8 transform -translate-y-full transition-transform duration-500 ease-in-out md:hidden" id="mobile-drawer">
-    <div class="pt-24 space-y-6 flex flex-col">
-      <a href="#positioning" class="mobile-nav-link text-3xl font-display font-bold text-slate-800 hover:text-brand-600 transition-colors py-2">Positioning</a>
-      <a href="#services" class="mobile-nav-link text-3xl font-display font-bold text-slate-800 hover:text-brand-600 transition-colors py-2">Services</a>
-      <a href="#results" class="mobile-nav-link text-3xl font-display font-bold text-slate-800 hover:text-brand-600 transition-colors py-2">Results</a>
-      <a href="#contact" class="mobile-nav-link text-3xl font-display font-bold text-slate-800 hover:text-brand-600 transition-colors py-2">Connect</a>
-    </div>
-    
-    <div class="space-y-6 pt-6 border-t border-slate-100">
-      <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Active Channels</p>
-      <div class="flex items-center space-x-6">
-        <a href="https://www.tiktok.com/@timothyiloba" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-brand-600 font-medium text-sm transition-colors flex items-center">
-          TikTok
-          <svg class="ml-1 w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+  <!-- Mobile Dropdown Menu Overlay (Floating SMM Card) -->
+  <div id="mobile-menu" class="hidden absolute top-[76px] left-4 right-4 bg-white/95 backdrop-blur-xl border border-slate-100/90 rounded-[2rem] p-6 py-8 shadow-2xl shadow-slate-200/60 z-40 md:hidden flex flex-col space-y-6 animate-slide-down">
+    <nav class="flex flex-col space-y-3" aria-label="SMM Mobile Navigation">
+      <a href="#positioning" class="mobile-nav-link flex items-center justify-between p-3 px-4 rounded-xl hover:bg-slate-50 transition-colors text-lg font-display font-semibold text-slate-800 hover:text-brand-600">
+        <span>Positioning</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+        </svg>
+      </a>
+      <a href="#services" class="mobile-nav-link flex items-center justify-between p-3 px-4 rounded-xl hover:bg-slate-50 transition-colors text-lg font-display font-semibold text-slate-800 hover:text-brand-600">
+        <span>Services</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+        </svg>
+      </a>
+      <a href="#results" class="mobile-nav-link flex items-center justify-between p-3 px-4 rounded-xl hover:bg-slate-50 transition-colors text-lg font-display font-semibold text-slate-800 hover:text-brand-600">
+        <span>Results</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+        </svg>
+      </a>
+      <a href="#contact" class="mobile-nav-link flex items-center justify-between p-3 px-4 rounded-xl hover:bg-slate-50 transition-colors text-lg font-display font-semibold text-slate-800 hover:text-brand-600">
+        <span>Connect</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+        </svg>
+      </a>
+    </nav>
+
+    <div class="pt-4 border-t border-slate-100/80 flex flex-col space-y-4">
+      <!-- Active TikTok Channel -->
+      <div class="flex flex-col space-y-2">
+        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-4">Active SMM Channels</p>
+        <a href="https://www.tiktok.com/@timothyiloba" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 px-4 rounded-xl bg-slate-50 text-slate-700 hover:text-brand-600 hover:bg-slate-100/80 transition-colors font-medium text-sm">
+          <span class="flex items-center">
+            <span class="mr-2">🎵</span> TikTok Profile
+          </span>
+          <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
           </svg>
         </a>
@@ -668,19 +728,23 @@
 
   <!-- LIGHTWEIGHT INTERACTION CONTROLLERS -->
   <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+
     // Header shrinking and background interpolation on scroll
     function updateNavbarAppearance() {
       const header = document.getElementById('sticky-header');
       const container = document.getElementById('navbar-container');
       if (!header || !container) return;
 
-      if (window.scrollY > 20) {
-        header.classList.add('backdrop-blur-md', 'bg-white/80', 'border-slate-100');
+      const isMenuOpen = mobileMenu && !mobileMenu.classList.contains('hidden');
+
+      if (window.scrollY > 20 || isMenuOpen) {
+        header.classList.add('backdrop-blur-md', 'bg-white/80', 'border-slate-100', 'shadow-md');
         header.classList.remove('border-transparent');
         container.classList.add('h-16');
         container.classList.remove('h-20');
       } else {
-        header.classList.remove('backdrop-blur-md', 'bg-white/80', 'border-slate-100');
+        header.classList.remove('backdrop-blur-md', 'bg-white/80', 'border-slate-100', 'shadow-md');
         header.classList.add('border-transparent');
         container.classList.add('h-20');
         container.classList.remove('h-16');
@@ -688,36 +752,30 @@
     }
     window.addEventListener('scroll', updateNavbarAppearance);
 
-    // Mobile Navigation Drawer Toggle
+    // Mobile Hamburger Navigation Drawer Toggle
     const menuBtn = document.getElementById('menu-btn');
-    const mobileDrawer = document.getElementById('mobile-drawer');
-    const hamburgerIcon = document.getElementById('hamburger-icon');
 
-    if (menuBtn && mobileDrawer && hamburgerIcon) {
+    if (menuBtn && mobileMenu) {
       menuBtn.addEventListener('click', () => {
-        const isOpen = mobileDrawer.classList.contains('-translate-y-full');
-        if (isOpen) {
-          mobileDrawer.classList.remove('-translate-y-full');
-          hamburgerIcon.style.transform = 'rotate(90deg)';
-          hamburgerIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>`;
-          document.body.classList.add('overflow-hidden');
-        } else {
-          mobileDrawer.classList.add('-translate-y-full');
-          hamburgerIcon.style.transform = 'none';
-          hamburgerIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>`;
-          document.body.classList.remove('overflow-hidden');
-        }
+        const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', !isExpanded);
+        menuBtn.classList.toggle('menu-open');
+        mobileMenu.classList.toggle('hidden');
+        document.body.classList.toggle('overflow-hidden'); // Lock background scroll
+        updateNavbarAppearance(); // Sync navbar background
       });
     }
 
-    // Close mobile drawer on navigation link clicks
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    // Close mobile menu when link is clicked
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileNavLinks.forEach(link => {
       link.addEventListener('click', () => {
-        if (mobileDrawer) {
-          mobileDrawer.classList.add('-translate-y-full');
-          hamburgerIcon.style.transform = 'none';
-          hamburgerIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>`;
-          document.body.classList.remove('overflow-hidden');
+        if (menuBtn && mobileMenu) {
+          menuBtn.classList.remove('menu-open');
+          mobileMenu.classList.add('hidden');
+          menuBtn.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('overflow-hidden'); // Unlock background scroll
+          updateNavbarAppearance(); // Sync navbar background
         }
       });
     });
